@@ -16,6 +16,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    
 
     <link rel="stylesheet" href="./../assets/css/style.css" />
   </head>
@@ -41,27 +42,27 @@
       <div class="row">
         <div class="col-md-8">
           <ul class="nav nav-pills" id="navPills">
-      
+
           </ul>
 
           <div class="well">
             <!-- Tab panes -->
-            <div class="tab-content">
+            <div class="tab-content" id="tabPanes">
 
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="contain">
+          <div class="contain" id="fittingRoom">
             <div class="body"></div>
             <div class="model"></div>
-            <div class="hairstyle"></div>
-            <div class="necklace"></div>
-            <div class="bikinitop"></div>
-            <div class="bikinibottom"></div>
-            <div class="handbag"></div>
-            <div class="feet"></div>
-            <div class="background"></div>
+            <div class="hairstyle" id="hairstyle"></div>
+            <div class="necklace" id="necklaces"></div>
+            <div class="bikinitop" id="topclothes"></div>
+            <div class="bikinibottom" id="botclothes"></div>
+            <div class="handbag" id="handbags"></div>
+            <div class="feet" id="shoes"></div>
+            <div class="background" id="background"></div>
           </div>
         </div>
       </div>
@@ -80,9 +81,11 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./../models/ListChosen.js"></script>
-    <script src="./../models/ChoseItem.js"></script>
-    <script src="./../utils/callData.js"></script>
-    <script type="module" src="./../controllers/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.5/axios.min.js" integrity="sha512-01Pe9P3mJM/4c80VuoYEGHlspKGbd9uWQe9HtdLsdTqV0CS1kz8ca44sinVEXEvlZNciMmsAjeEbm5ZxHC7yYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="./../models/ListChosen.js"></script>
+    <script src="./../models/ChoseItem.js"></script> -->
+    <script src="./../utils/service.js"></script>
+    <script src="../controllers/main.js"></script>
   </body>
 </html>
